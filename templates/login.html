@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/static/index.css">
+    <link rel="icon" href="/static/favicon-fdf8a6f6.png">
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; /* Ensures vertical centering */
+            padding: 0.5rem 2rem;
+            background-color: #34495e;
+            color: white;
+            width: 100%;
+        }
+
+        .navbar-brand {
+            display: flex;
+            align-items: center; /* Centers logo and text vertically */
+        }
+
+        .navbar-brand img {
+            height: 50px;
+            margin-right: 20px; /* Space between logo and text */
+        }
+
+        .navbar-brand a {
+            font-size: 1.5rem; /* Adjust this value to reduce the text size */
+            color: #f39c12; /* Ensure the text is white, matching the navbar color */
+        }
+
+        .navbar-links {
+            display: flex;
+            gap: 0.5rem;
+            margin-left: auto; /* Pushes the icons to the right */
+        }
+
+        .nav-link svg {
+            width: 20px;
+            height: 20px;
+            margin-bottom: 5px;
+        }
+
+        .nav-link p {
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a href="/">
+                <img src="/static/logo.png" alt="Logo">
+            </a>
+        </div>
+        <!-- Centered "Bloatware-C2" text -->
+        <div class="navbar-center">
+            Bloatware-C2
+        </div>
+        <div class="navbar-links">
+            <!-- Show these links only if the user is logged in -->
+            
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container">
+        
+<div class="login-container">
+    <h2>Login</h2>
+    <form method="POST" action="/login">
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+            <button type="submit">Login</button>
+        </div>
+    </form>
+    
+</div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        Copyright © 2024 Bloatware-C2. All Rights Reserved.
+    </footer>
+</body>
+</html>
